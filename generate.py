@@ -8,7 +8,8 @@ def load_doc(filename):
 	file.close()
 	return text
 
-# from predefined set of 6k image names for training extract the names of the files and store in the list dataset 
+#  extract the names of the files
+#  and store in the list dataset 
 def load_set(filename):
 	doc=load_doc(filename)
 	dataset=list()
@@ -19,7 +20,8 @@ def load_set(filename):
 		dataset.append(identifier)
 	return set(dataset)
 
-# create a dictionary of the image:descriptions from the images selected for training and add a atart and end pointer: startseq,endseq 
+# create a dictionary of the image:descriptions from the images selected for 
+# training and add a atart and end pointer: startseq,endseq 
 def load_clean_descriptions(filename, dataset):
 	doc=load_doc(filename)
 	descriptions=dict()
@@ -33,14 +35,15 @@ def load_clean_descriptions(filename, dataset):
 			descriptions[image_id].append(desc)
 	return descriptions
 
-# covert a dictionary of clean descriptions to a list of descriptions, appending each description to a list
+# convert a dictionary of clean descriptions to a list of descriptions,
+#  appending each description to a list
 def to_lines(descriptions):
 	all_desc=list()
 	for key in descriptions.keys():
 		[all_desc.append(d) for d in descriptions[key]]
 	return all_desc
 
-# fit a tokenizer on the descrptions and maintain tokenisation stats
+# fit a tokenizer on the descriptions and maintain tokenization stats
 def create_tokenizer(descriptions):
 	lines=to_lines(descriptions)
 	tokenizer=Tokenizer()
@@ -48,7 +51,7 @@ def create_tokenizer(descriptions):
 	return tokenizer
 
 # load training dataset (6K images)
-filename='D:\Professional\Project\Caption Generator\Flickr8k_text\Flickr_8k.trainImages.txt'
+filename='D:\Jenny-work\Projects\Open Lab\Open Lab\Flickr8k_text\Flickr_8k.trainImages.txt'
 train=load_set(filename)
 print('Dataset: %d' % len(train))
 train_descriptions=load_clean_descriptions('descriptions.txt', train)

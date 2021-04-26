@@ -101,7 +101,8 @@ def define_model(vocab_size, max_length):
 	se1=Embedding(vocab_size, 256, mask_zero=True)(inputs2)
 	se2=Dropout(0.5)(se1)
 	se3=LSTM(256)(se2)
-	# This layer uses the output of both the previous layers and generate and uses a relu action intially followed by softmax for generting final sequence of words
+	# This layer uses the output of both the previous layers and generate and uses a relu action intially
+	#  followed by softmax for generating final sequence of words
 	decoder1=add([fe2, se3])
 	decoder2=Dense(256, activation='relu')(decoder1)
 	outputs=Dense(vocab_size, activation='softmax')(decoder2)
@@ -121,7 +122,7 @@ def data_generator(descriptions,photos,tokenizer,max_length,vocab_size):
 			yield [in_img, in_seq],out_word
  
 # load training dataset (6K images)
-filename='D:\Professional\Project\Caption Generator\Flickr8k_text\Flickr_8k.trainImages.txt'
+filename='D:\Jenny-work\Projects\Open Lab\Open Lab\Flickr8k_text\Flickr_8k.trainImages.txt'
 train=load_set(filename)
 print('Dataset: %d' % len(train))
 train_descriptions=load_clean_descriptions('descriptions.txt', train)

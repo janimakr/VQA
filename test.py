@@ -50,6 +50,6 @@ tokenizer = load(open('tokenizer.pkl', 'rb'))
 max_length = 34
 # intiating prediction
 model=load_model('model_13.h5')
-photo=extract_features('Sample3.jpg')
+photo=extract_features('img2.jpg')
 description=generate_desc(model, tokenizer, photo, max_length)
 print(description)

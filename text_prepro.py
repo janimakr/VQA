@@ -6,7 +6,8 @@ def load_doc(filename):
 	file.close()
 	return text
  
-# for each image traverse through the document and create a dictionary where, key is image id and the values are the descriptions of the image(5 descriptions per image), descriptions are stored as a list 
+# for each image traverse through the document and create a dictionary where,
+#  key is image id and the values are the descriptions of the image
 def load_descriptions(doc):
 	mapping=dict()
 	for line in doc.split('\n'):
@@ -21,7 +22,8 @@ def load_descriptions(doc):
 		mapping[image_id].append(image_desc)
 	return mapping
 
-# picking each word in the descriptions and cleaning the text by converting all to lower case,removing the punctuations and single character words like 's','a' etc.
+# picking each word in the descriptions and cleaning the text by converting all to lower case,
+# removing the punctuations and single character words like 's','a' etc.
 def clean_descriptions(descriptions):
 	table=str.maketrans('','',string.punctuation)
 	for key, desc_list in descriptions.items():
@@ -29,7 +31,6 @@ def clean_descriptions(descriptions):
 			desc=desc_list[i]
 			desc=desc.split()
 			desc=[word.lower() for word in desc]
-			desc=[w.translate(table) for w in desc]
 			desc=[word for word in desc if len(word)>1]
 			desc=[word for word in desc if word.isalpha()]
 			desc_list[i]=' '.join(desc)
@@ -42,7 +43,7 @@ def to_vocabulary(descriptions):
 		[all_desc.update(d.split()) for d in descriptions[key]]
 	return all_desc
  
-# save descriptions to file, descripion per line, i.e. image id followed by one of the descriptions of the image
+# save descriptions to file,1 descripion per line, i.e. image id followed by one of the descriptions of the image
 def save_descriptions(descriptions, filename):
 	lines=list()
 	for key, desc_list in descriptions.items():
@@ -53,7 +54,7 @@ def save_descriptions(descriptions, filename):
 	file.write(data)
 	file.close()
  
-filename='D:\Professional\Project\Caption Generator\Flickr8k_text\Flickr8k.token.txt'
+filename='D:\Jenny-work\Projects\Open Lab\Open Lab\Flickr8k_text\Flickr8k.token.txt'
 doc=load_doc(filename)
 descriptions=load_descriptions(doc)
 print('Loaded: %d ' % len(descriptions))

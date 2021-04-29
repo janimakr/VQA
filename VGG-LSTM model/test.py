@@ -7,6 +7,9 @@ from keras.preprocessing.image import img_to_array
 from keras.applications.vgg19 import preprocess_input
 from keras.models import Model
 from keras.models import load_model
+import sys
+
+
  
 # extract features from the input image using vgg19
 def extract_features(filename):
@@ -52,4 +55,8 @@ max_length = 34
 model=load_model('model_13.h5')
 photo=extract_features('img2.jpg')
 description=generate_desc(model, tokenizer, photo, max_length)
-print(description)
+print("Description generated: ",description)
+with open('inputfromDescriptionModel.txt', 'w') as f:
+    sys.stdout = f # Change the standard output to the file we created.
+    print(description[9:len(description)-7])
+

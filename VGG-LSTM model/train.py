@@ -130,6 +130,6 @@ model=define_model(vocab, max_length)
 epochs=20
 steps=len(train_descriptions)
 for i in range(epochs):
-	generator=data_generator(train_descriptions, train_features,tokenizer,max_length, vocab_size)
+	generator=data_generator(train_descriptions, train_features,tokenizer,max_length, vocab)
 	model.fit_generator(generator,epochs=1,steps_per_epoch=steps,verbose=1)
 	model.save('model_' + str(i) + '.h5')

@@ -12,10 +12,10 @@ import sys
 
  
 # extract features from the input image using vgg19
-def extract_features(filename):
+def extract_features(file):
 	model=VGG19()
 	model=Model(inputs=model.inputs, outputs=model.layers[-2].output)
-	image=load_img(filename, target_size=(224, 224))
+	image=load_img(file, target_size=(224, 224))
 	image=img_to_array(image)
 	image=image.reshape((1, image.shape[0], image.shape[1], image.shape[2]))
 	image=preprocess_input(image)
@@ -35,12 +35,9 @@ def generate_desc(model, tokenizer, photo, max_length):
 	for i in range(max_length):
 		sequence=tokenizer.texts_to_sequences([in_text])[0]
 		sequence=pad_sequences([sequence], maxlen=max_length)
-		# predicting the next word
 		yhat=model.predict([photo,sequence], verbose=0)
-		# convert probability predicted to integer
 		yhat=argmax(yhat)
 		word=word_for_id(yhat, tokenizer)
-		# Generate the word form integers
 		if word is None:
 			break
 		in_text+=' '+word
@@ -57,6 +54,6 @@ photo=extract_features('sampleinput2.jpg')
 description=generate_desc(model, tokenizer, photo, max_length)
 print("Description generated: ",description)
 with open('inputfromDescriptionModel.txt', 'w') as f:
-    sys.stdout = f # Change the standard output to the file we created.
+    sys.stdout = f 
     print(description[9:len(description)-7])
 

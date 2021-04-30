@@ -10,4 +10,4 @@ Historically, building a system that can answer natural language questions about
 
 
 
-<img src="images/readme.JFIF" alt="readme">
+<img src="images/readme.jpg" alt="readme">

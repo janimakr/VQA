@@ -16,6 +16,7 @@ In this Repo we have taken tried to implement the VQA model  using  two architec
 - Vgg-19 and LSTM 
 - Inception V3 and LSTM using Glove 
  
-For [Inception V3](http://cocodataset.org/#home) , For [Vgg-19](https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_Dataset.zip) [TEXT](https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_text.zip)
+For [Inception V3](http://cocodataset.org/#home) , 
+For [Vgg-19](https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_Dataset.zip) [FLICKR TEXT](https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_text.zip)
 
  

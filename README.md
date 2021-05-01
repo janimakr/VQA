@@ -16,6 +16,10 @@ In this Repo we have tried to implement the VQA model  using  two architectures,
 - Vgg-19 and LSTM 
 - Inception V3 and LSTM using Glove 
 
+First, a description is generated using the above architectures.
+Then, the question-answering pretrained model from Transformers library is used through pipeline.
+Finally, the output generated is converted from text-to-speech using the gtts library.
+
 
 Datasets: 
 For [Inception V3](http://cocodataset.org/#home) 

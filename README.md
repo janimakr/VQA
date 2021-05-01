@@ -20,7 +20,7 @@ Workflow:
 
 - >A description is generated using the above architectures.
 - >Input questions are answered using a pretrained model from Transformers library.
-- >The output generated is converted from text-to-speech using the gtts library.
+- >The output generated is converted from text-to-speech using the gTTS library.
 
 
 Datasets: 

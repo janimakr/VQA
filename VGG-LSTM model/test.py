@@ -50,10 +50,10 @@ tokenizer = load(open('tokenizer.pkl', 'rb'))
 max_length = 34
 # intiating prediction
 model=load_model('model_13.h5')
-photo=extract_features('sampleinput2.jpg')
+photo=extract_features('testinput3.jpg')
 description=generate_desc(model, tokenizer, photo, max_length)
 print("Description generated: ",description)
-with open('inputfromDescriptionModel.txt', 'w') as f:
+with open('outputfromDescriptionModel.txt', 'w') as f:
     sys.stdout = f 
     print(description[9:len(description)-7])
 

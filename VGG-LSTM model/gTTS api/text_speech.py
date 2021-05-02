@@ -2,7 +2,7 @@
 from gtts import gTTS
 from IPython.display import Audio
 #  answer="This is a trial audio used for testing. If you've run this, comment this part to get the answer for your question" # comment this part !
- # directly run the variable with the answer into the caption below 
+# directly run the variable with the answer into the caption below 
 with open('outputfromVQA.txt','r') as file:
     answer=file.read()
 tts = gTTS(answer)

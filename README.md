@@ -14,7 +14,7 @@ Historically, building a system that can answer natural language questions about
 
 In this Repo we have tried to implement the VQA model  using  two architectures, 
 - Vgg-19 and LSTM 
-- Inception V3 and LSTM using Glove 
+- Visual Attention Model 
 
 Workflow:
 
@@ -24,6 +24,6 @@ Workflow:
 
 
 Datasets: 
-For [Inception V3](http://cocodataset.org/#home) 
+For [Visual Attention](http://cocodataset.org/#home) 
 For [Vgg-19](https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_Dataset.zip), [LSTM](https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_text.zip)
 

@@ -30,4 +30,4 @@ For [Vgg-19](https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Fl
 ## How to run 
  To run the Visual Attention model
   - Clone the repo 
-  - Run the ipynb file in your local system(Jupyter) or using Google colab if you dont have a GPU
+  - Run the VQA_with_caption.ipynb file in your local system(Jupyter) or using Google colab if you dont have a GPU

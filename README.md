@@ -27,3 +27,7 @@ Datasets:
 For [Visual Attention](http://cocodataset.org/#home) 
 For [Vgg-19](https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_Dataset.zip), [LSTM](https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_text.zip)
 
+## How to run 
+ To run the Visual Attention model
+  - Clone the repo 
+  - Run the ipynb file in your local system(Jupyter) or using Google colab if you dont have a GPU

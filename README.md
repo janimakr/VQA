@@ -34,7 +34,7 @@ For [Vgg-19](https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Fl
  
  To run the Vgg19-LSTM model
   - Clone the repo
-  - Download the dataset and store it in the same folder. (For [Vgg-19](https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_Dataset.zip), [LSTM](https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_text.zip))
+  - Download the dataset and store it in the same folder. (for [Vgg-19](https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_Dataset.zip), [LSTM](https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_text.zip))
   - Run the image_prepro.py and text_prepro.py files in your local system to preprocess the dataset.
   - Run generate.py, followed by train.py to train the model to start generating descriptions.
   - To evaluate the results of training, run evaluate.py.

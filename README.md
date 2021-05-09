@@ -33,3 +33,12 @@ For [Vgg-19](https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Fl
   - Run the VQA_with_caption.ipynb file in your local system(Jupyter) or using Google colab if you dont have a GPU
  
  To run the Vgg19-LSTM model
+  - Clone the repo 
+  - Run the image_prepro.py and text_prepro file in your local system to preprocess the dataset.
+  - Run generate.py, followed by train.py to train the model.
+  - To evaluate the model, run evaluate.py.
+  - Test the model by giving the .h5 file (generated after running train.py) and a sample image as inputs in the code.
+  - To answer questions using generated description, run QnA.py and give any question as input.
+  - To convert the obtained answer to speech (audio format), run 
+
+ 

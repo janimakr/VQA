@@ -28,18 +28,18 @@ For [Visual Attention](http://cocodataset.org/#home)
 For [Vgg-19](https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_Dataset.zip), [LSTM](https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_text.zip)
 
 ## How to run 
- To run the Visual Attention model
-  - Clone the repo 
-  - Run the VQA_with_caption.ipynb file in your local system(Jupyter) or using Google colab if you dont have a GPU
+ To run the Visual Attention model:
+  - Clone the repo. 
+  - Run the VQA_with_caption.ipynb file in your local system(Jupyter) or using Google colab if you dont have a GPU.
  
- To run the Vgg19-LSTM model
-  - Clone the repo
+ To run the Vgg19-LSTM model:
+  - Clone the repo.
   - Download the dataset and store it in the same folder. (for [Vgg-19](https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_Dataset.zip), [LSTM](https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_text.zip))
   - Run the image_prepro.py and text_prepro.py files in your local system to preprocess the dataset.
   - Run generate.py, followed by train.py to train the model to start generating descriptions.
   - To evaluate the results of training, run evaluate.py.
   - Test the model by giving the .h5 file (generated after training the model) and a sample image as inputs in the code.
   - To answer questions using generated description, run QnA.py and give any question as input.
-  - To convert the obtained answer to speech (audio format), run text_speech.py
+  - To convert the obtained answer to speech (audio format), run text_speech.py.
 
  

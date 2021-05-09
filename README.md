@@ -39,6 +39,6 @@ For [Vgg-19](https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Fl
   - To evaluate the model, run evaluate.py.
   - Test the model by giving the .h5 file (generated after running train.py) and a sample image as inputs in the code.
   - To answer questions using generated description, run QnA.py and give any question as input.
-  - To convert the obtained answer to speech (audio format), run 
+  - To convert the obtained answer to speech (audio format), run text_speech.py
 
  

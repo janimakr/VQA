@@ -25,7 +25,7 @@ def featureExtraction(dir):
 	return feature
 
 # extract features from all images and store in pkl file
-dir='D:\Professional\Project\Caption Generator\Flickr8k_Dataset\Flicker8k_Dataset'
+dir='path\Flickr8k_Dataset\Flicker8k_Dataset'
 feature=featureExtraction(dir)
 print('Extracted Features: %d' % len(feature))
 dump(feature,open('features.pkl', 'wb'))

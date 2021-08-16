@@ -47,8 +47,8 @@ For [Vgg-19](https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Fl
  ## Individual modules were taken/referenced from from: 
  Caption generator for VGG19-LSTM Module:
   - https://machinelearningmastery.com/develop-a-deep-learning-caption-generation-model-in-python/
- "\n"Question Answering using pretrained transformer: 
+ <br/>Question Answering using pretrained transformer: 
   - https://towardsdatascience.com/question-answering-with-pretrained-transformers-using-pytorch-c3e7a44b4012
-  Text to Speech(using gtts):
+  <br/>Text to Speech(using gtts):
   - https://www.geeksforgeeks.org/convert-text-speech-python/ 
-  - Run the VQA_with_caption.ipynb file in your local system(Jupyter) or using Google colab if you dont have a GPU.
+  

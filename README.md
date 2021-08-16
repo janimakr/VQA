@@ -44,7 +44,7 @@ For [Vgg-19](https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Fl
 
 
 
- ## Individual modeules were taken/referenced from from: 
+ ## Individual modules were taken/referenced from from: 
  Caption generator for VGG19-LSTM Module:
   - https://machinelearningmastery.com/develop-a-deep-learning-caption-generation-model-in-python/
  Question Answering using pretrained transformer: 

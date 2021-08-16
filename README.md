@@ -44,7 +44,7 @@ For [Vgg-19](https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Fl
 
 
 
- ## Individual modules were taken/referenced from- 
+ ## References/Source code credit
   - Caption generator for VGG19-LSTM Module: https://machinelearningmastery.com/develop-a-deep-learning-caption-generation-model-in-python/
   - Question Answering using pretrained transformers: https://towardsdatascience.com/question-answering-with-pretrained-transformers-using-pytorch-c3e7a44b4012 
   - Text to Speech(using gtts): https://www.geeksforgeeks.org/convert-text-speech-python/ 

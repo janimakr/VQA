@@ -48,4 +48,4 @@ For [Vgg-19](https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Fl
   - Caption generator for VGG19-LSTM Module: https://machinelearningmastery.com/develop-a-deep-learning-caption-generation-model-in-python/
   - Question Answering using pretrained transformers: https://towardsdatascience.com/question-answering-with-pretrained-transformers-using-pytorch-c3e7a44b4012 
   - Text to Speech(using gtts): https://www.geeksforgeeks.org/convert-text-speech-python/ 
-  
+  - Caption generator for Inception V3-  https://github.com/jeffheaton/t81_558_deep_learning/blob/master/t81_558_class_10_4_captioning.ipynb
